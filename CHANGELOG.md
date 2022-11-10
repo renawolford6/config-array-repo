@@ -1,5 +1,54 @@
 # Changelog
 
+## 1.0.0 (2022-11-10)
+
+
+### Features
+
+* Add isDirectoryIgnored; deprecated isIgnored ([7da4290](https://github.com/renawolford6/config-array-repo/commit/7da4290a7dd1201504349807f7202f8e7f340eea))
+* Add isExplicitMatch() method ([d50ee64](https://github.com/renawolford6/config-array-repo/commit/d50ee64ed6eefca547942848433d7a07dfca520b))
+* Add isIgnored() method ([c016e0a](https://github.com/renawolford6/config-array-repo/commit/c016e0a294faaa751f9cd85dc0f029240c8b0624))
+* Add the normalizeSync() method ([6de6e6d](https://github.com/renawolford6/config-array-repo/commit/6de6e6d7e3b6b428e42c018615ccabcc0ef12186))
+* Allow async config functions ([593b29d](https://github.com/renawolford6/config-array-repo/commit/593b29dd36d3f23091808911963e4d2ab2f865f1))
+* getConfig() now returns undefined when no configs match. ([39aee15](https://github.com/renawolford6/config-array-repo/commit/39aee155d47ae080a550322ad5e5d32fd4bbdd0f))
+* Only object configs by default ([1064167](https://github.com/renawolford6/config-array-repo/commit/10641679642e1875c5a420e29b90d9816a675d28))
+
+
+### Bug Fixes
+
+* Cache negated patterns separately ([ae2721a](https://github.com/renawolford6/config-array-repo/commit/ae2721a02d2fac9d0b8e71474336d18269b1107c))
+* **deps:** Update minimatch to secure version ([3ef0609](https://github.com/renawolford6/config-array-repo/commit/3ef06090858e9e538a07913c6a51a61fa859e613))
+* Ensure directories can be unignored. ([572c290](https://github.com/renawolford6/config-array-repo/commit/572c290d8b3e7584de2983a6983e590c4dd40246))
+* Ensure dot directories are matched correctly ([da5c7b8](https://github.com/renawolford6/config-array-repo/commit/da5c7b8a391e83389b6ae89884a2dde82760beaa))
+* Ensure global ignores are honored ([c016e0a](https://github.com/renawolford6/config-array-repo/commit/c016e0a294faaa751f9cd85dc0f029240c8b0624))
+* Ensure preprocess method has correct 'this' value. ([c93c3fb](https://github.com/renawolford6/config-array-repo/commit/c93c3fb3cf62440e1605261d8b619d897d697355))
+* Ensure subdirectories of ignored directories are ignored ([a1413b0](https://github.com/renawolford6/config-array-repo/commit/a1413b0f49fd0704f4b35c4b0a092fdb2ac4d86d))
+* Error conditions for isDirectoryIgnored ([67526f2](https://github.com/renawolford6/config-array-repo/commit/67526f297f17483be6110f16e267570922abf9e9))
+* Explicit matching is required against files field ([fc880a8](https://github.com/renawolford6/config-array-repo/commit/fc880a84ccd077720f9e7665bc22438b640120f6))
+* Files outside of basePath should be ignored ([d11ff77](https://github.com/renawolford6/config-array-repo/commit/d11ff77d4103b1a876bfbb2df0c6a01cf8607e59))
+* files property to not return negated patterns ([411cb77](https://github.com/renawolford6/config-array-repo/commit/411cb77559d125391ec9091330b4709558c379da))
+* Global ignores only when no other keys ([a4a6ee3](https://github.com/renawolford6/config-array-repo/commit/a4a6ee3afbfb4d36ea0fe0c7b3b84e701a418056))
+* Improve caching to improve performance ([#50](https://github.com/renawolford6/config-array-repo/issues/50)) ([e6b24b9](https://github.com/renawolford6/config-array-repo/commit/e6b24b9a68f68d7cac03bf8eb458675587bb6afe))
+* Incorrect behavior of files property with AND patterns ([77025d5](https://github.com/renawolford6/config-array-repo/commit/77025d5de6ce0f8a1ba0c49a5166462aac3c2c92))
+* isDirectoryIgnored should match on relative path. ([94b1c92](https://github.com/renawolford6/config-array-repo/commit/94b1c92d1aec335d295d84e1d2728c71f47820fa))
+* isDirectoryIgnored should not test negated patterns ([c5c615c](https://github.com/renawolford6/config-array-repo/commit/c5c615c6faa379611dce0b1ccaae8bd8714dde13))
+* isFileIgnored should call isDirectoryIgnored ([ee99451](https://github.com/renawolford6/config-array-repo/commit/ee99451f93c0818eed23791a74258dfa9351a74a))
+* Make negated ignore patterns work like gitignore ([90d9d26](https://github.com/renawolford6/config-array-repo/commit/90d9d26c6feed15b4dbe23e8388a6f5ede6a8a44))
+* Negated patterns to work when files match ([7cf721c](https://github.com/renawolford6/config-array-repo/commit/7cf721c578174a32ff07a3e36ce44848289c5565))
+* Object merging error by upgrading object-schema ([b528b47](https://github.com/renawolford6/config-array-repo/commit/b528b4778622c65bd33240322c6722761bc971db))
+* Only apply universal patterns if others match. ([1d129b0](https://github.com/renawolford6/config-array-repo/commit/1d129b02022c92f97d47e386185fd868ca7a0973))
+* preprocessConfig should have correct 'this' value ([3f282d7](https://github.com/renawolford6/config-array-repo/commit/3f282d72d07960859cdca19842b7cd9451550d8c))
+* Properly build package for release ([b970c33](https://github.com/renawolford6/config-array-repo/commit/b970c330018d2c6d4d627a8afb24f0a8eee1a57f))
+* Re-introduce ignores fixes ([c760696](https://github.com/renawolford6/config-array-repo/commit/c7606968878ad0a088499e08901944b14b94fe60))
+* Throw error if files key isn't a non-empty array ([8a63f02](https://github.com/renawolford6/config-array-repo/commit/8a63f02cd0f1ebc870a55d384bfc088890ef5b3b))
+* Unignoring of directories should work ([a584d8b](https://github.com/renawolford6/config-array-repo/commit/a584d8b9b32f51db0d4e3824ae30ff2df5e574b3))
+
+
+### Performance Improvements
+
+* Cache isDirectoryIgnored calls ([18cbdd6](https://github.com/renawolford6/config-array-repo/commit/18cbdd6190801c394622ee0dbe4af36644b5a9c7))
+* Cache Minimatch instances ([f67ab0e](https://github.com/renawolford6/config-array-repo/commit/f67ab0e8ac3eacb29941a3642d426ed1004fdaa6))
+
 ## [0.11.7](https://github.com/humanwhocodes/config-array/compare/v0.11.6...v0.11.7) (2022-10-28)
 
 
